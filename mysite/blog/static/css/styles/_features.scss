@@ -1,0 +1,41 @@
+.feature-container{
+    background: #323232;
+}
+
+.features{
+    min-height: 90vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(20%,1fr));
+        min-height: 150vh;
+        grid-gap: 2rem;
+        justify-content: space-between;
+        .card{
+            display: flex;
+            flex-direction: column;
+            /*width: 30%;*/
+            /*height: 150vh;*/
+            overflow: hidden;
+            
+
+            img{
+                object-fit: cover;
+                cursor: pointer;
+                transition: all 0.3s ease-out;
+                width: 100%;
+                height: 100%;
+               
+            }
+            img:hover{
+                transform:scale(1.2);
+            }
+        }
+        
+
+    }
+}

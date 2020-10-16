@@ -1,0 +1,62 @@
+.repertuarobj{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to left,black,pink);
+    justify-content: center;
+    object-position: center;
+    text-align: center;
+    position: relative;
+    
+    
+    .mans{
+        width: 48%;
+        left: 52%;
+        position: absolute;
+        h1{
+            font-size: 7rem;
+        }
+        
+        img{
+
+            width: 100%;
+            padding: 1%;
+            float: left;
+            object-fit: cover;
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+        
+        
+    }
+    .womens{
+        width: 48%;
+        h1{
+            font-size: 7rem;
+        }
+        img{
+            object-fit: cover;
+            width: 100%;
+            padding: 1%;
+        };
+        img:hover{
+            transform: scale(1.2);
+        }
+        
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    .repertuarobj{
+        position: none;
+        .mans{
+            position: none;
+            width: 100%;
+            left: 0;
+            position: relative;
+        }
+        .womens{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+
+.Ons{
+    background: linear-gradient(to left,black,pink);
+    height: 100%;
+    .divobj{
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        justify-content: center;
+        text-align: center;
+        img{
+            width: 95%;
+            padding-top: 1%;
+            object-fit: contain;
+
+        }
+        .divforpO{
+            text-align: center;
+            bottom: 5%;
+            p{
+                padding: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1365px) {
+    .Ons{
+        .divobj{
+            position: relative;
+            .divforpO{
+                position: absolute;
+                top: 10%;
+                left: 5%;
+                transform: translate(-10%,-5%);
+                width: 40%;
+                
+                
+            }
+        }
+    }
+}

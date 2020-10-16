@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+
+{% block content %}
+        <section class="repertuarobj">
+            <div class="mans"><a href="{% url 'repertuarMan' %}"><h1>Мужской</h1><img src="../static/img/pg9.jpg" alt=""></a></div>
+            <div class="womens"><a href="{% url 'repertuarWomen' %}"><h1>Женский</h1><img src="../static/img/pg10.jpg" alt=""></a></div>
+        </section>
+ {% endblock %}

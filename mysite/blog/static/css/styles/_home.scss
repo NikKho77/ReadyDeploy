@@ -1,0 +1,130 @@
+.home{
+    background: linear-gradient(to left,black,pink);
+}
+#logotop{
+font-family: 'Great Vibes', cursive;}
+.nav-container{
+    background: black;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/*nav{
+    width: 80%;
+    margin: auto;
+    min-height: 10vh;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        list-style: none;
+    }
+    #logo{
+        flex: 1;
+        font-size: 4rem;
+        font-family: 'Mr De Haviland', cursive;
+    }
+    .unsinb{
+        width: 15px;
+        height: 15px;
+        display: none;
+    }
+    .unsin{
+        display: none;
+        width: 80%;
+        height: 50vh;
+        flex-direction: column;
+        transform: translateY(-10px);
+        opacity: 0;
+        transition: all 0.4s ease;
+        align-items: center;
+        list-style: none;
+        
+        li{
+            
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .usin li:hover{
+            background-color: pink;
+        }
+    }
+    .nav button:focus + ul{
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0px);
+    }
+}
+.navbar-brand{
+font-size:40px;
+}
+
+*/
+.showcase{
+    display: grid;
+    min-height: 90vh;
+    grid-template-columns: 10% repeat(3,minmax(5rem, 1fr)) 10%;
+
+    position: relative;
+
+    h2{
+        grid-column: 2/3;
+        position: absolute;
+        top: 55%;
+        left:10%;
+
+
+    }
+    img{
+        grid-row: 2/3;
+        grid-column: 2/5;
+        width: 100%;
+        object-fit: cover;
+        align-self: center;
+        justify-self: center;
+        position:relative;
+    }
+    .showcase img::after {
+        content:"";
+        background:black;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        opacity:0.9;
+
+    }
+    .info{
+        grid-row: 3/4;
+        grid-column: 2/5;
+    }
+    p{
+        text-align: center;
+    }
+}
+.showcase::after {
+    content: "";
+    background: black;
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+
+}
+.navbar{
+padding-bottom:10rem;}
+
+.navbar-brand{
+  font-family: 'Great Vibes', cursive;
+}

@@ -1,0 +1,27 @@
+footer{
+    background: black;
+}
+.fot{
+    width: 80%;
+    margin: auto;
+    min-height: 10vh;
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a{
+        display: flex;
+        justify-content: space-between;
+        flex: 0.1;
+        img{
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+    p{
+        display: flex;
+        justify-content: space-between;
+        flex: 3;
+    }
+}
